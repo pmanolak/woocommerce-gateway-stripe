@@ -47,6 +47,7 @@ const ExpressCheckoutPreviewComponent = ( { size } ) => {
 			link: 'never',
 			googlePay: 'never',
 			applePay: 'never',
+			klarna: 'never',
 		},
 		layout: { overflow: 'never' },
 	};
