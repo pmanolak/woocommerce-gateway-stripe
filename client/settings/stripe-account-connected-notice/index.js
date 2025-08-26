@@ -1,6 +1,6 @@
+import { getAdminLink } from '@woocommerce/settings';
 import { __ } from '@wordpress/i18n';
 import { dispatch } from '@wordpress/data';
-import { getAdminLink } from '@woocommerce/settings';
 import { getQuery } from '@woocommerce/navigation';
 import {
 	getStorageWithExpiration,
@@ -45,7 +45,7 @@ const StripeAccountConnectedNotice = () => {
 	if ( shouldShowNotice() ) {
 		localStorage.removeItem( LOCAL_STORAGE_KEY );
 		dispatch( 'core/notices' ).createSuccessNotice(
-			__( 'Stripe Account Connected', 'woocommerce' ),
+			__( 'Stripe Account Connected', 'woocommerce-gateway-stripe' ),
 			{
 				id: 'WOOCOMMERCE_STRIPE_ACCOUNT_CONNECTED_NOTICE',
 				actions: [
